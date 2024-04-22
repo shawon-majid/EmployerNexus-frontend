@@ -54,17 +54,17 @@ const PortfolioPage = () => {
     >
       <div className="h-[600vh] relative" ref={ref}>
         <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
-          My Works
+          Our Works
         </div>
-        <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
+        <div className="sticky top-0 mt-5 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
+            <div className="h-screen w-screen flex items-center justify-center " />
             {items.map((item) => (
               <div
-                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                className={`h-screen w-screen flex items-center justify-center  ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
+                <div className="flex mt-20 flex-col gap-8 text-black">
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
@@ -74,11 +74,11 @@ const PortfolioPage = () => {
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                  {/* <Link href={item.link} className="flex justify-end">
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-black text-yellow-600 font-semibold m-4 rounded">
                       See Demo
                     </button>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             ))}

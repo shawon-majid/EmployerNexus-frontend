@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-  const text = "Say Hello";
+  const text = "Your Proposal";
 
   const form = useRef();
 
@@ -58,7 +58,6 @@ const ContactPage = () => {
                 {letter}
               </motion.span>
             ))}
-            😊
           </div>
         </div>
         {/* FORM CONTAINER */}

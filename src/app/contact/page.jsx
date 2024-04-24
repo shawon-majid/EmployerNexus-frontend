@@ -69,16 +69,15 @@ const ContactPage = () => {
           <span className="text-black">Dear Employer Nexus,</span>
           <textarea
             rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+            className="bg-transparent border-b-2 border-b-black outline-none resize-none text-black"
             name="user_message"
           />
           <span className="text-black">Our mail address is:</span>
           <input
             name="user_email"
             type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
+            className="bg-transparent border-b-2 border-b-black outline-none text-black"
           />
-          <span className="text-black">Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
             Send
           </button>
